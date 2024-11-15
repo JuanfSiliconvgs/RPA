@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Adeslas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Adeslas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_strNumPoliza" Type="InArgument(x:String)" />
     <x:Property Name="in_intClientId" Type="InArgument(x:Int32)" />
@@ -133,19 +133,19 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Adeslas" sap:VirtualizedContainerService.HintSize="866.4000000000001,5229.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Adeslas" sap:VirtualizedContainerService.HintSize="876.0000000000001,4452" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Utilizar Navegador Edge: Certificados" sap:VirtualizedContainerService.HintSize="603.2,5206.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="5d35b839-f2fd-426b-be94-e0d06c2f6600">
+    <uix:NApplicationCard DisplayName="Utilizar Navegador Edge: Certificados" sap:VirtualizedContainerService.HintSize="603.2,4428.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="5d35b839-f2fd-426b-be94-e0d06c2f6600">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="569.6,4966.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="569.6,4188.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strNumCertificado" />
             </Sequence.Variables>
@@ -168,7 +168,7 @@
               </Assign.Value>
             </Assign>
             <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="536,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[&quot;https://adeslas360.segurcaixaadeslas.es/es/buscador-asegurados?numPol=666018144&amp;cer=&quot; + strNumCertificado]" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cliente'" sap:VirtualizedContainerService.HintSize="536,189" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cliente'" sap:VirtualizedContainerService.HintSize="536,189.6" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="adeslas360.segurcaixaadeslas.es/es/buscador-asegurados" DesignTimeRectangle="848, 794, 99, 35" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='gotoFichaNombre*' tag='A' type='' class='' aaname='*' /&gt;" Guid="9fbffa99-5522-4358-a13a-f83564d04a1d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKAAAAAuCAYAAACvdRKFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAR/SURBVHhe7ZtBTiQxDEXnGpwPaY7BGXrLAVjSKzatWbNDrLgDcIoaJalUOfa3E2koIqb/kyLU3U7s2L+SFF39ayFkIr/0G4R8JxQgmQoFSKZCAZKpUIBkKkCAH8v57mG5+S3b43J+b60+nx6Xm7vn5bO+8f683DZ9dLssL4O2p9fNTeH1Ymz2ZmPb2edixuyQ56d83T59aDPB23LSsd2/aSMRk8iHJM91nxOKo+dj6wM+yygfkDDnD6L2YN5Ni/0oAa6D6cDXYGQRPQEOFTqwLclTQQcJe7lPk3SKmf1cllOykbGGrDnQ9vWi0e8n1vy0AvWEJi5wnedEMFdJFZnNYRn/dB+MM+JjxCbEyaOiFWB2qhNWyIUWgx0lwK1AsjhhMspE0eq0xRj2lwDfEhQ3ek+g86Z3GNNvJNbVJ5pz+Sz19/My5GPEJiBcGASNAMtV1e+UOE6AoGhhMjzRyAIExZBsxdMfVJKvy3J+38cxsWrMXGu8z+Wv7hvONbH21/1WZDxubF0fgzYeYMf0aFdAcTbrdT5OgEBQYTIccak+bjEEZk5dSqzGd4O2EfNDK1k417qyeJ+rXHhjee9LRmwQVUNmQcDYmxAhwq2BophioX6yyYACAX7VGdAIbuCqNH26OOJv0BdU+9oIKphrdw6mb3Smd3xUVl9ew3OOV2eEFaBA34FJp54A3eRIQrGCxITJsOLDwtBCsGABgru8zQb50Wi/+rU6rLvicMQkQPHDY5XrQzBio4CLR4dQgDv14LxP5CsE2NiuIoPFBMnw7wLthdMXbMHMCdAWWW+vCG2jBajmDuaa8Fb6jfCiRrm2PhpGbCToODHAoABtQKZYSFQejq0rKicZZvvKgAJXHL8bjh+JXmX0a4PxiePbBAZicPMigCtdBvgDPgwjNhtj/3JBCAGCQCU5oANXwIxdaTNuMsDE3bETvTNKJwdIcKE/YO/6kFu9mOvQyuKNWTBbo5tPwYjNSnd1DgD/B0ST1dvIUQIUW8noFati7iXDFMNQhaDH2AVi4oZ5cy6mSCzrOHt8vQtmZe1n4qpoEUf5rIzYJHq+O4AtGBy6QSCeANt+bduCjAQotpzRhBXRpfH6B3VTDAd4jozGRXmD9oEAN9Gucx3IaarBn85FZ4S8CR20EZvcSow191GrdTaawQIk5Cg+lvM9BUhmkVZ0tfJTgOTbSFuwPnZRgGQqFCCZCgVIpkIBkqlQgGQqFCCZCgVIpkIBkqlQgGQqoQDNM2adhwj0o0f+F9X4i/NsX7+q6X4Zrr849x5WiL78J7M5XoDgUSLvkahGgAoTi4QC/LFMEaD3GQV4fUwTIBqLArw+5gkQ/KKMArw+JgrQPub/bwIENymyOeOSufxHAuQK+BP5egGKQscC5BZMpACBuGzRi2iwAG2hQwFmf61oKMDrQ6yAdkXKRW8EZLfNHSvOSIDoMwrw+hACVD/d8woHfweq+xaQyBJFTFYwFOD1oc6A6retXtHQ71WBbRaUtssNC4kCvD7CmxBCjoYCJFOhAMlUKEAylb83wIY3hdRbPwAAAABJRU5ErkJggg==" InformativeScreenshot="8c061724c964691c4e9c7a35763c2ed4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Buscador de asegurados' /&gt;" SearchSteps="FuzzySelector, Image" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -179,7 +179,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Documentación'" sap:VirtualizedContainerService.HintSize="536,189" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Documentación'" sap:VirtualizedContainerService.HintSize="536,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="adeslas360.segurcaixaadeslas.es/es/ficha-asegurado" CVScreenId="daa42709-7b79-4362-a177-d045c536df16" CvElementArea="1074, 733, 174, 58" CvTextArea="1099, 752, 122, 16" CvTextArgument="Documentacion" CvType="Button" DesignTimeRectangle="1083, 750, 155, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='liDocumentacion' tag='A' type='' class='' aaname='Documentación' check:innerText='Documentación' /&gt;" Guid="8edb7bab-9962-441d-8925-8e8af0e1afec" ImageBase64="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" InformativeScreenshot="b88f0d189f20b3ab1b07b5bd7e83c460.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Ficha asegurado' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -211,26 +211,26 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <Sequence DisplayName="Guardar archivo" sap:VirtualizedContainerService.HintSize="536,1962" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Guardar archivo" sap:VirtualizedContainerService.HintSize="536,1961.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Pdf" sap:VirtualizedContainerService.HintSize="502,622" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Pdf" sap:VirtualizedContainerService.HintSize="500.8,620.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard DisplayName="Utilizar Navegador Edge: rpCCPPSeniors" sap:VirtualizedContainerService.HintSize="450,528" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="addc65fe-d01b-4226-a836-bc188d18b293">
+                <uix:NApplicationCard DisplayName="Utilizar Navegador Edge: rpCCPPSeniors" sap:VirtualizedContainerService.HintSize="449.6,527.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="addc65fe-d01b-4226-a836-bc188d18b293">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,285.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,13 +249,13 @@
                   </uix:NApplicationCard.TargetApp>
                 </uix:NApplicationCard>
               </Sequence>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Guardar Archivo en ruta dinámica " sap:VirtualizedContainerService.HintSize="502,1246" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="d12ee663-90d7-48f3-8a41-9dab541c1014" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Guardar Archivo en ruta dinámica " sap:VirtualizedContainerService.HintSize="500.8,1247.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="d12ee663-90d7-48f3-8a41-9dab541c1014" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,930" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,931.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="boolFileExists" />
                         <Variable x:TypeArguments="x:String" Name="strUrl" />
@@ -265,7 +265,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Todas las ubicaciones'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="d12ee663-90d7-48f3-8a41-9dab541c1014" Text="C:\Users\juanfrancisco.sanche\OneDrive - Silicon Valley\Documentos\UiPath\Extracción Duplicado Póliza\Certificados\[k(Enter)]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Todas las ubicaciones'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="d12ee663-90d7-48f3-8a41-9dab541c1014" Text="C:\Users\juanfrancisco.sanche\OneDrive - Silicon Valley\Documentos\UiPath\Extracción Duplicado Póliza\Certificados\[k(Enter)]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable CvElementArea="188, 57, 26, 22" CvType="Icon" DesignTimeRectangle="190, 48, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Cargando' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Dirección: C:\Users\juanfrancisco.sanche\OneDrive - Silicon Vall*' /&gt;&lt;ctrl name='Dirección: C:\Users\juanfrancisco.sanche\OneDrive - Silicon Vall*' role='tool bar' /&gt;&lt;ctrl name='Todas las ubicaciones' role='split button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Cargando' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Dirección: C:\Users\juanfrancisco.sanche\OneDrive - Silicon Vall*' /&gt;&lt;ctrl name='Dirección: C:\Users\juanfrancisco.sanche\OneDrive - Silicon Vall*' role='tool bar' /&gt;&lt;ctrl name='Todas las ubicaciones' role='split button' automationid='' check:text='Todas las ubicaciones' /&gt;" Guid="bd480ce7-8663-4eda-96b0-c2412f39afe7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMISURBVGhD7dnrb0thHMDx/RWiLWWic325F5ZIlnghiIWYujSuIcxthpm5hGxxiVuMVEgkIm4Zm8uCocM7r7CxWell7dbqZjMWhpmqr5y2tPY8rSxpclI5Tb5vznPyy+f8cs6rZuh0OtK1jIEX0qmM/Px80rX03vzAC+mUhlcrDa9WGl6tNLxaaXi1+v/wj61D+PloKD8eDOXHQx3BBzr6bXpOF+uFe9VMig890hGsU/B6gnV6vtcZ6LcZ6L8/jINrDcL9aiXFK5sOo216vt2LoPvuKQ3n693hfKk18rnWyKfbRnrvjOTjrUg9NZl8uJlJT80oqspGCHNTnRTfW6vnfY2e7psG3t0w0HldaRhdNSa+20vgzUnwHQffUWg9CN594C2Hlt3QshNcJYSa1whzU50UH/Kfgc5KeHsROs5D+1kInAH/SWg7DN794N0L3rIY2F0Krq3g3AyOjeBYL8xNVGFhIW63m5ycHOEsWVI8gVOR7fpPgO8YtB2BtkMxtCcZegO8WgP2VcLcROXl5dHX10dHR8egHkCOV9D+Y+CLolsPiJt2KegScG4BZ1F407/R2FdA81JhbrLMZvOgH0COV97leLSyac/vTW+PoR1F8Dq66VcxNE2LoGmBMPdfWSwWlJ/yCg08kyXHh9HRj9CzB1p2gXtHBO2KbjqMXhuHXgYvF0PTQmg0w4s5wtxkGY1GbDZbGF9RUSGcy5LjPfHo6KZdxZFNOwrhtYJeDfaVcWgLNM4Lo3k+CxpmCnMTFQ+3Wq3CeaLk+L82XQzOTXJ0Uzw6/w+a+mlQP1WYm6jy8vJBw5XkeNe2v9Hh1yOKti8fsOl49PQwmmdT4GmuMDdR2dnZFBQUCNf/lRQfai6Ibnpd3KaXQ/OSKHo+NM6FF7Mj6IYZMfSTXHgymeDjScLcVCfFV+3JpPv6aLqqTXRdM/G2ykRndRbtV5TG0H51LIFKpXEEKsfjv6w0AZ/SpYl4L0zkXGmWMDfVSfHpkoZXKw2vVhperTS8Wml4tdLwaqXh1Ur7+16tfgH+ETG7YQc5bgAAAABJRU5ErkJggg==" InformativeScreenshot="47a6d80d04aab7f3e13bf14471e390dd.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -276,7 +276,7 @@
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
                       </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Nombre'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="d12ee663-90d7-48f3-8a41-9dab541c1014" Text="[&quot;Certificado &quot; &amp; in_strNumPoliza + &quot;.pdf&quot; +&quot;[k(Enter)]&quot;]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Nombre'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="d12ee663-90d7-48f3-8a41-9dab541c1014" Text="[&quot;Certificado &quot; &amp; in_strNumPoliza + &quot;.pdf&quot; +&quot;[k(Enter)]&quot;]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable CvElementArea="137, 565, 1050, 23" CvTextArea="139, 570, 277, 15" CvTextArgument="OCC - Consulta de polizas y suplementos (Occident)" CvType="InputBox" DesignTimeRectangle="136, 569, 1031, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="abf21489-8556-4223-b365-2d36692b35a9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABAsAAAAVCAYAAAAgqWdPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUzSURBVHhe7d1Nbts8EIfxHCvogXqGHsPHyAm8zCkCdBEgu2yKrLzqToW+rOGfM5SoyAmNPgZ+eG1RosgRLXQoOu/D4+NjBwAAAAAAMHvQDQAAAAAA4P/mThY8/PoNAIfS+wwAAACAdjFZAOBL6H0GAAAAQLuYLADwJfQ+AwAAAKBd5cmCp0tnX6/Pb1kC8PDrrTv9MTv9+eh+VJXXOLKuPd67c/e3O510+15H1zfpr1sSG3Oe00f3eotzfrkbxe6b/Xj+23Uv78u2Td/BjYrX/th4/nzJ26r3GQAAAADtiicLhiTFJg9jop4kAEPy0XXnJ5MonD660/x5rbzGkXXtZhOqI5KrI+pQ7905m0S5xXm+Wwt9OrgN/Ri3127Ld/Awn+2LHt+3Na1P7zMAAAAA2hVMFoxJSZKY94aE/dL9vCYDzj5Xa+U1jqzrM+5gsuD05qy2uMF5vl0LfTq2Df2qgmUiIBjzyXfwSJ/ti3N8P9lhVknofQYAAABAu/zJgjAhMU8Lw30ma+U1ttQ1rTyYX0uSNSUxz8tybk3I0mM06fEmCPr/mteUEPVLr3VbxrTz9fkjPVfSB6+/0/mfbB35So/5lcVAJjmGJe/2VeyHF6uZk9hmP4WI6tgQb7e/cpwbu/z4/py233H8pI5s/PhjIL4GXt81NtofbwzoE/uoXm97HLNtY3FHLMwY0PsMAAAAgHbFkwVZorckIEPiEe5jko1SeY3VusZk5ZooDYmOTThNAjMs7Z6SH3nyudS1krxm71VUlrZzTFqD+p4uznLzqS9zLJx+xjHw3tt6vcTU7OvGypDyfsIhS4jdOrQ92tZSf733NnZy/PT7/2tc7VhYq8MbP3pM6Rq4fbfkGoRj3k7MjO/zcRJt15jVjsWaWMzblj7pfQYAAABAu+LJAjd5vNHKAvcpppY72wvlS7KqSYz5PJ03TaoK+4fvJ8kfo9PEyUsA87Ykryy5zM957efmGBTqKPXDjZW2zSSOXqLr1qHt2drWLbHT4wufd9UhZaVr4PbdsvHz6xpt+A5G27W/1WOxIhbaViYLAAAAgLviTxZ4y8qzJCTYJ0kUSuU1VupykiM3qRzK9POyLH19/+i9tkGXipt9igmal+BZ2jZZ6bEpBlKHPvFe6Ucaq9T8m/v0t/e5ffHu2XGwJXZ6fOHzrjpKY2CkEzFx/Pq67LHBmLfncM6X7ZOdw/S3eixWxOJavtSj9xkAAAAA7QomC3SJ8fwPf3kyOj2BThIa+38oWCuvUaxrbNu1LEl2NInRz6MlwZUkbTivlxBJPf1+7nJ5K21nvvS79OTZ2Sfr55YY6HtJCjf0I5wMGBLQS3f2JkrE9niX+hvsd6XXuvR5Tx1eWXQNFn788omZ9e9g9HODaLu2vXYsev2NYpFPSOh9BgAAAEC74smCXrIc3XnKOScEdiddfr5WXqNUV1IWJTTyOemfScrs9pdLmBBd/xDg8GR+TNCGVylhNnWX/6hc/DOE88vyB/p08mQ9Bsv75A8Z9q8hnkE/oliJoc6s3ZOojpV4+/2V6+rGrnDtvc876kjHgNZhjov6briTCKvfwb49Xrm3XfpSPRYrY9HXb8aC3mcAAAAAtKs8WYDGaLLWHl12/znt9/dQ8iT+vuUrJfQ+AwAAAKBdTBbclcaT58OT3cb7ewPDzwGilRl3xFthovcZAAAAAO1isuCutJo8zz9dOLptrfYXe+h9BgAAAEC73MkCAAAAAADw/2KyAAAAAAAAJJgsAAAAAAAACSYLAAAAAABA4h/4vG86D+zFRQAAAABJRU5ErkJggg==" InformativeScreenshot="ac426928af712cb24f97c2d2f97c60e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -287,7 +287,7 @@
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
                       </uix:NTypeInto>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strUrl]</OutArgument>
                         </Assign.To>
@@ -295,8 +295,8 @@
                           <InArgument x:TypeArguments="x:String">["C:\Users\juanfrancisco.sanche\OneDrive - Silicon Valley\Documentos\UiPath\Extracción Duplicado Póliza\Certificados\Certificado " &amp; in_strNumPoliza + ".pdf"]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[boolFileExists]" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[strUrl]" PathType="File" />
-                      <If Condition="[boolFileExists = True]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_1">
+                      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[boolFileExists]" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[strUrl]" PathType="File" />
+                      <If Condition="[boolFileExists = True]" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="If_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -335,7 +335,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While archivo no existe" sap:VirtualizedContainerService.HintSize="434,50" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While archivo no existe" sap:VirtualizedContainerService.HintSize="433.6,49.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                         <ui:InterruptibleWhile.Body>
                           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,320" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
@@ -371,14 +371,14 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
             </Sequence>
-            <Sequence DisplayName="Cerrar sesión" sap:VirtualizedContainerService.HintSize="536,579" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Cerrar sesión" sap:VirtualizedContainerService.HintSize="536,580" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Bienvenido Rodriguez, A…'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Bienvenido Rodriguez, A…'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="adeslas360.segurcaixaadeslas.es/es/certificados" CVScreenId="26271c72-f542-4e77-b8d5-b774be7361be" CvTextArea="1097, 335, 154, 21" CvTextArgument="Rodriguez, Amaya" CvType="Text" DesignTimeRectangle="1099, 334, 152, 20" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl parentid='div_Bienvenido' tag='B' type='' class='' aaname='Rodriguez, Amaya' check:innerText='Rodriguez, Amaya' /&gt;" Guid="f1c41c64-b856-4479-9d85-e51800be968e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAYCAYAAAAPmZSDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANnSURBVGhD7VrbccQgDEy1V0auDM/1kWvDZVzKcMYPQKxWMnYcOyTsDB8xGNDuIuGbvA0NDSfiDR80NPwkmuEaTkUzXMOpaIZrOBXNcA2nQhjuNTzfb8Pt5rT35/CSbx+A18d9mb8beuxEfD6H+7KXbnVwreiHLnJ+H56f2F83thmu1Bgb0AwH6LuM7/vH0Uf8Wuww3LEkbDLcP0D/AL5/oKpcCW64B5NepHrsh1NplgKRoYJxleGyLCbLSzf0TobLhJpESu/OBwT/DhBxo7gYF/QrczhjiyDje6S1MVaMJXE4tnBwJXdEM+zP3hWxkThYX76HtDfEtw3nkZ4tiOKppg2XtXFNarj1zLzHcIzAuRFRWCNCrSE/fJ4ezCxy7TvlMMXtvY86YPLQPNpcIdeW4VZaFFuYSE6chAiblXOL0pmZEAOFsdDn7yGPZbPhxDpMJCRxBltzC7TBVPaP4B8WOsvDWJxXHgrB48xt2g9PHGHdND9NAnDwthuOZTd1mkEcKuAyMpKkDYdjmeHU+2TsVsNZQlOhFmRiq4xUABKbjiFAm2h+jKZZHps6jdC6h3dZvP5c+R7YuGLDKfHJiTT7GJlhJIrrjGV9NgFoMPw7QBvOLZVyrwEsU2/E6ppZfEYsKvssjxVHvtba8F42w/i9fVuGiwbyygQbb/QRo8SRtRsuuwLgfacU3p2KzW3EUmg4WnppdoSyGsdY8etyjLqsGA6eF6fqY0rqJsNhZlFrGiIRctQhMOEdyA3wMoRsURcjliLDgYnUu1b26oYuzEPLuORKcxpQYLgR8gSKiemFXZqAfTQIMlgpIqaKYH10D8wI8lmKIfvCCuQos8KcCz9F9zbDBBLmoTH7jzGcVWJz3nX25Ybkmuw0HEzCPhxIszbG207DAVmxiZ8GgijeXud3Ejn2WH2f4W0ZZ5ggQpYkxvsIdai+Yzj/Z4yxIe85F3goVnjYbThY2DdTAbnLOqp8UVPp97FPZxsuChqp69mJD4MxLkn2CtGFhpPiY0wJYq1pjzw2ay00XPYsxuXobySbCNB12pOxlz/83yKGKFdgEgQzQ0VgZXMnqjeczBAlp/0KTNmEZYYqwO++e1G94TCdq4Zl8myMxr96D7ug78ZHVIr6DTfBuE9Vm1V+A8BwB3H5RwzXUAu+AGbJJEWyWEMpAAAAAElFTkSuQmCC" InformativeScreenshot="9ab0d9accfcb1a75035f602da66c38d0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certificados' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -389,7 +389,7 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cerrar sesión'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cerrar sesión'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d35b839-f2fd-426b-be94-e0d06c2f6600" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="adeslas360.segurcaixaadeslas.es/es/certificados" CVScreenId="26271c72-f542-4e77-b8d5-b774be7361be" CvTextArea="1152, 446, 98, 16" CvTextArgument="Cerrar sesion" CvType="Text" DesignTimeRectangle="1154, 445, 98, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='cerrarSesion' tag='SPAN' type='' class='' aaname='Cerrar sesión' check:innerText='Cerrar sesión' /&gt;" Guid="5bc734d2-05e6-49dc-ae37-80b7fbcd368f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAWCAYAAAAy/emjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIrSURBVGhD7ZcBjoMgEEV7Wo9Rj2F6j3oNj2GPwabA1JnPH6W22SVZXkKaKsLw/zDoJXSa5IIXOm3QjWmUbkyjdGMapRvTKK4xy20Iw6DadQ4rdvrXrGG+DmG8c1XW+xh18+4fURrzmMP4NOK2mMvJqDHMD3O5Q1nCNAxhshK+BRiTsgBNMff6zvkVrDHLtLsr1mUpTJEtK81mSTJzuuddKPef81znMEu5fJmdzdcl1CSJMx4jrmW/FO/HrqrHq01h68JLGR4BdkzZSemXrzFhjImBkgV4pIUpI/NCtmBFaDBbRCOim2u14yFFgpVjH8ae/2tho+iQRGVsyry8zm0MMUTNW/RJGGPsxEekSTBj0oIluFKQSCGcCIGC4/P4n2NjYFTEzmI0gDFOf6spm5ev6bwxTiBWYMyqTHx2RzgsIWBMMR6insdMjFTFvpUbPp+NxU0GMxd7Kagw5q1ShjXctDPGSCnQZmDQzngUqOOkfPBGSqC6v4lKjGHafcMYN5MEff+ob8QRkhlDx8OgnfEOEZNqyxRDTOJJt79j5PpZY5xO5p5kBTkcIyYQR0hiDM244pvKGa8GXaaqYmdoYSEWx2x2xpwwhomRYB+YxZtNcbg5QjIBcnnBUhFLiPsmxGHZi+fnYexEaPZig2s18xZr+sSYiBJFGmaz9IRvASsaBp9hxjhjpYTwxPDBsWrnM2Rht1aeP/iM/Y7BHfSxMZ2/phvTKN2YRunGNMoPAk3Mh4ngm4oAAAAASUVORK5CYII=" InformativeScreenshot="e98acd0cfa53159ea2d11073af70cc0f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certificados' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -400,21 +400,21 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Cerrar Adeslas" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
+              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Cerrar Adeslas" sap:VirtualizedContainerService.HintSize="416,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
             </Sequence>
-            <uix:NApplicationCard DisplayName="Cerrar PDF" sap:VirtualizedContainerService.HintSize="536,418" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="3f400944-5f42-433b-9c78-e2797c41f3f5">
+            <uix:NApplicationCard DisplayName="Cerrar PDF" sap:VirtualizedContainerService.HintSize="536,410.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="3f400944-5f42-433b-9c78-e2797c41f3f5">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,169" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navegar por el navegador - Cerrar pestaña" sap:VirtualizedContainerService.HintSize="382,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V4" />
+                    <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navegar por el navegador - Cerrar pestaña" sap:VirtualizedContainerService.HintSize="382.4,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V4" />
                   </Sequence>
                 </ActivityAction>
               </uix:NApplicationCard.Body>
@@ -428,118 +428,6 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <Sequence DisplayName="Subir documento a Visual" sap:VirtualizedContainerService.HintSize="536,773" sap2010:WorkflowViewState.IdRef="Sequence_13">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="strRutaDocumentos" />
-                <Variable x:TypeArguments="upr:ILocalResource" Name="strPath" />
-                <Variable x:TypeArguments="ui:DatabaseConnection" Name="databaseConnect" />
-                <Variable x:TypeArguments="x:String" Name="SQL" />
-                <Variable x:TypeArguments="x:String" Name="FileName" />
-                <Variable x:TypeArguments="x:Int32" Name="idUsuarioWS" />
-                <Variable x:TypeArguments="x:String" Name="model_DocumentType" />
-                <Variable x:TypeArguments="x:String" Name="GuidId" />
-                <Variable x:TypeArguments="x:String" Name="model_Name" />
-              </Sequence.Variables>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:DatabaseConnect DisplayName="Conectar a base de datos" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=192.168.192.6;Initial Catalog=UPES_DATALAKE;User ID=usuariompm;Password=Programa2010;Encrypt=False" DatabaseConnection="[databaseConnect]" />
-              <ui:MultipleAssign DisplayName="Asignación múltiple" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-                <ui:MultipleAssign.AssignOperations>
-                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:Int32">[idUsuarioWS]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Int32">1100</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:String">[FileName]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">["Certificado " + in_strNumPoliza + ".pdf"]</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:String">[strRutaDocumentos]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">C:\Users\juanfrancisco.sanche\OneDrive - Silicon Valley\Documentos\UiPath\Extracción Duplicado Póliza\Certificados\</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:String">[model_Name]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">["Certificado " + in_strNumPoliza + ".pdf"]</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
-                  </scg:List>
-                </ui:MultipleAssign.AssignOperations>
-              </ui:MultipleAssign>
-              <ui:CommentOut DisplayName="Comentar Crear ruta carpeta" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="416,163" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Crear carpeta" sap:VirtualizedContainerService.HintSize="382,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="[strPath]" Path="[strRutaDocumentos + in_intClientId.ToString + in_intIdPolicy.ToString]" />
-                  </Sequence>
-                </ui:CommentOut.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
-              <ui:CommentOut DisplayName="Comentar Mover Archivo" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strPath.ToString]" DisplayName="Mover archivo" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strUrl]" />
-                  </Sequence>
-                </ui:CommentOut.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
-              <Assign DisplayName="Asignar consulta SQL" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_5">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[SQL]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["INSERT INTO [vsegbas_copia_replica].[dbo].[ARCHIVODOCUMENTAL] " &amp;
-      "([ADC_Objeto], [OBJ_Id], [ADC_Nombre], [ADC_Path], [ADC_CompName], [ADC_FC], [ADC_ID_FC], [ADC_FM], [ADC_ID_FM], " &amp;
-      "ADC_Tipo, [ADC_GUID], [ADC_IsLoaded], ADC_Alias) " &amp;
-      "VALUES (7, " &amp; in_intIdPolicy &amp; ", '" &amp; FileName &amp; "', '" &amp; strRutaDocumentos &amp; "', host_name(), getdate(), " &amp;
-      idUsuarioWS &amp; ", getdate(), " &amp; idUsuarioWS &amp; ",'" &amp;
-      model_DocumentType &amp; "', '" &amp; GuidId &amp; "', 1, '" &amp; model_Name &amp; "')"]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Ejecutar comando" ExistingDbConnection="[databaseConnect]" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="[SQL]">
-                <ui:ExecuteNonQuery.Parameters>
-                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                </ui:ExecuteNonQuery.Parameters>
-              </ui:ExecuteNonQuery>
-            </Sequence>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
